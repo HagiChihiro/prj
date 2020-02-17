@@ -1,0 +1,148 @@
+@import "https://use.fontawesome.com/releases/v5.0.6/css/all.css";
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,900';
+
+*:not(input){
+	margin:0; padding:0;
+	list-style:none; border:none;
+	box-sizing:border-box;
+}
+html{
+	font-size:18px;
+}
+body{
+	font-family:sans-serif;
+	padding-bottom:1rem;
+}
+h1, h2{
+	text-transform:uppercase;
+	font-family:Roboto;
+}
+h1{
+	font-size:2.3rem;
+}
+section:not(#main) h1{
+	letter-spacing:0.1rem;
+	text-align:center;
+	margin-bottom:1rem;
+}
+h2{
+	margin-bottom:0.25rem;
+}
+dd, p{
+	font-family:Roboto;
+	font-weight:300;
+	font-size:0.85rem;
+	line-height:120%;
+	margin-bottom:1rem;
+	padding-top:0.25rem;
+}
+a{
+	color:#333;
+	text-decoration:none;
+}
+figure, .image{
+	background-color:#dedede;
+	font-size:0;
+}
+figure>*,
+.image>*{
+	width:100%;
+}
+.page{
+	width:100vw;
+	overflow-x:hidden;
+}
+.page>section{
+	margin-bottom:1.5rem;
+}
+.inner{
+	padding-left:30px;
+	padding-right:30px;
+}
+.new{
+	position:relative;
+}
+.new::before{
+	content:"\f004";
+	font-family:"Font Awesome 5 Free";
+	font-size:1rem;
+	position:absolute;
+	right:-7px; top:-7px;
+	color:salmon;
+}
+.rows{
+	display:flex;
+	justify-content:space-between;
+}
+.video{
+	position:relative;
+}
+.video::before{
+	position:absolute;
+	content:"\f144";
+	font-size:40px;
+	font-family:"Font Awesome 5 Free";
+	color:white;
+	display:block;
+	width:40px; height:40px;
+	left:calc((100% - 40px) / 2); top:calc((100% - 40px) / 2);
+}
+a.image{
+	display:block;
+	width:100%;
+	height:100%;
+	font-size:0;
+	background-color:transparent;
+}
+button.normal{
+	width:100%;
+	height:40px;
+	border-radius:20px;
+	background-color:black;
+	text-transform:uppercase;
+	font-family:Roboto;
+	font-weight:400;
+	font-size:0.8rem;
+	letter-spacing:0.1rem;
+}
+button.positive,
+button.negative{
+	background-color:white;
+	width:calc((100vw - 60px - 10px) / 2);
+	border:3px solid black;
+	font-weight:900;
+}
+button.positive{
+	border-color:#14ae67;
+}
+button.negative{
+	border-color:#ed6b32;
+}
+button.positive:active{
+	background-color:#14ae67;
+}
+button.negative:active{
+	background-color:#ed6b32;
+}
+button.positive:active a,
+button.negative:active a{
+	color:white;
+}
+button.positive a,
+button.negative a{
+	line-height:34px;
+}
+button.positive a{
+	color:#14ae67;
+}
+button.negative a{
+	color:#ed6b32;
+}
+button a{
+	display:block;
+	width:100%; height:100%;
+	line-height:40px;
+	color:white;
+	text-decoration:none;
+	user-select:none;
+}
