@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="viewport" content="width=device-width">
+<meta charset="utf-8">
+<title>ordinary contents - top</title>
+<link href="css/common.css" rel="stylesheet">
+<style>
+figure{
+	margin-bottom:0.5rem;
+	border-radius:3px;
+	overflow:hidden;
+}
+
+#main{
+	height:35vh;
+	background-image:url(resource/0.jpg);
+	background-size:cover;
+	background-position:center center;
+}
+
+#news ul{
+	display:flex;
+	justify-content:space-between;
+	width:calc((120px * 6 + (15px * 5)) * 2);
+}
+#news li{
+	width:120px;
+	height:calc(120px * (3 / 4));
+}
+#news li a{
+	border-radius:3px;
+	overflow:hidden;
+	background-size:cover;
+	background-position:center center;
+}
+#news li:nth-child(7) a,
+#news li:nth-child(1) a{background-image:url(resource/s/0.jpg)}
+#news li:nth-child(8) a,
+#news li:nth-child(2) a{background-image:url(resource/s/1.jpg)}
+#news li:nth-child(9) a,
+#news li:nth-child(3) a{background-image:url(resource/s/2.jpg)}
+#news li:nth-child(10) a,
+#news li:nth-child(4) a{background-image:url(resource/s/3.jpg)}
+#news li:nth-child(11) a,
+#news li:nth-child(5) a{background-image:url(resource/s/4.jpg)}
+#news li:nth-child(12) a,
+#news li:nth-child(6) a{background-image:url(resource/s/5.jpg)}
+#news ul{
+	animation-duration:30s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-name:newsLoop;
+	position:relative;
+	left:0;
+}
+@keyframes newsLoop{
+	100%{left:calc((120px * 6 + (15px * 5)) * -1)}
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+<section id="main" class="image">
+<h1><a href="index.html"><i class="fab fa-apple"></i></a></h1>
+</section>
+
+<section id="news">
+<h2 class="inner">loop</h2>
+<ul>
+	<li class="new"><a href="selection.html" class="image">1</a></li>
+	<li class="new"><a href="selection.html" class="image">2</a></li>
+	<li><a href="selection.html" class="image">3</a></li>
+	<li><a href="selection.html" class="image">4</a></li>
+	<li><a href="selection.html" class="image">5</a></li>
+	<li><a href="selection.html" class="image">6</a></li>
+
+	<li class="new"><a href="selection.html" class="image">1</a></li>
+	<li class="new"><a href="selection.html" class="image">2</a></li>
+	<li><a href="selection.html" class="image">3</a></li>
+	<li><a href="selection.html" class="image">4</a></li>
+	<li><a href="selection.html" class="image">5</a></li>
+	<li><a href="selection.html" class="image">6</a></li>
+</ul>
+</section>
+
+<section class="default inner">
+<h2>default</h2>
+<figure><video src="resource/v/0.mov" playsinline controls poster="resource/v/0.png"></video></figure>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+<button class="normal"><a href="description.html">description</a></button>
+</section>
+</div>
+</body>
+</html>
